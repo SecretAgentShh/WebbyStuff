@@ -1,0 +1,10 @@
+<button [style.background-color]="toggle? 'blue' :'pink' "
+(click)="showHide()">{{status}}</button>
+show={{status}}
+   
+    <br>
+    <div *ngIf="toggle; else elseBlock">Text to show</div>
+    <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
+ <!----  <h1>property Binding</h1>
+    <div>Button enabling using Property Binding:
+        <button[disabled]='Isdisabled' (mouseover)</button>-->
