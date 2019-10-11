@@ -1,0 +1,11 @@
+<h1>Movies</h1>
+<div>
+    <ul>
+        <li *ngFor="let m of movies  ; let s=index; let first=first; let last=last"
+        [ngClass]="{first:first,last:last}">
+        {{s+1}}:{{m.name}}
+        </li>
+   </ul>
+
+
+</div>

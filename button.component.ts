@@ -9,6 +9,7 @@ import { Component} from '@angular/core';
     name="what?";
     status="show";
     Isdisabled=false;
+    name1="Jackie Chan";
     Disable(){
         console.log(this.name);
     }
@@ -17,5 +18,10 @@ import { Component} from '@angular/core';
         this.toggle= !this.toggle;
         this.status= this.toggle ? 'show' :'hide'    }
 
+  print()
+  {
+      document.getElementById("myText").innerHTML=this.name1 + " snoopy";
   }
-  
+
+ 
+  }

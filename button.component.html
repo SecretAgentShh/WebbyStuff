@@ -5,6 +5,12 @@ show={{status}}
     <br>
     <div *ngIf="toggle; else elseBlock">Text to show</div>
     <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
- <!----  <h1>property Binding</h1>
-    <div>Button enabling using Property Binding:
-        <button[disabled]='Isdisabled' (mouseover)</button>-->
+  <h1>property Binding</h1>
+    <div>Button enabling using Event Binding:
+        <button [disabled]='Isdisabled' (mouseover)='Disable()'>Enable /Disable</button>
+        </div>
+        <div> by propety binding <input type = "text" [value] = 'name'></div>
+        <div> 2 way data binding</div>
+        <input type="text" [(ngModel)]="name1" (input)='print()'/>
+        <p id="myText"></p>
+
